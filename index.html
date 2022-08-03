@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS Calculator UI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calc">
+        <h1 class="display"></h1>
+        <div class="keypad">
+            <table>
+                <tr>
+                    <td>
+                        <div class="key" onclick="cleanAll()">AC</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="cleanLast()">C</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay('%')">%</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay('/')">&#247;</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key" onclick="toDisplay(7)">7</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay(8)">8</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay(9)">9</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay('*')">&#215;</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key" onclick="toDisplay(4)">4</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay(5)">5</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay(6)">6</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay('-')">&#8722;</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key" onclick="toDisplay(1)">1</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay(2)">2</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay(3)">3</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="toDisplay('+')">&#43;</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="key zero" onclick="toDisplay(0)">0</div>
+                    </td>
+                    
+                    <td>
+                        <div class="key" onclick="toDisplay('.')">.</div>
+                    </td>
+                    <td>
+                        <div class="key" onclick="calc()">&#61;</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

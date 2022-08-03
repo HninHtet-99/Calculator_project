@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+body{
+    background-color: #000;
+}
+.calc{
+    width: 350px;
+    margin: 10px auto;
+}
+.display{
+    color: #fff;
+    text-align: end;
+    padding: 20px;
+    font-size: 60px;
+    height: 120px;
+}
+.keypad{
+
+}
+.key{
+    background-color: #333333;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.key:active{
+    background-color: #33333390;
+}
+tr:first-child td .key{
+    background-color: #a5a5a5;
+    color: #000;
+}
+tr:first-child td .key:active{
+    background-color: #a5a5a590;
+}
+tr td:last-child .key{
+    background-color: #ffa54c;
+    color: #fff;
+}
+tr td:last-child .key:active{
+    background-color: #ffa54c90;
+}
+.zero{
+    width: 170px;
+    border-radius: 80px;
+}
